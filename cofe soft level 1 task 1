@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            background-color: #1e1e2f;
+            color: #e0e0f0;
+            margin: 0;
+            padding-bottom: 4rem;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: linear-gradient(135deg, #4ca1af, #c4e0e5);
+            color: #fff;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #ff6600;
+            border-bottom: 2px solid #ff6600;
+        }
+
+        section {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            color: #4ca1af;
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #4ca1af;
+            color: #1e1e2f;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Project Carousel */
+        .slider {
+            width: 90%;
+            max-width: 700px;
+            overflow: hidden;
+            margin: 2rem auto;
+            border-radius: 10px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .slides {
+            display: flex;
+            animation: slide 8s infinite;
+        }
+
+        .slide {
+            min-width: 100%;
+            text-align: center;
+            background: #ffffff;
+            padding: 1rem;
+        }
+
+        .slide img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-100%); }
+            50% { transform: translateX(-200%); }
+            100% { transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Madala Varun</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="https://www.wallpapersshare.com/img/big/red-mercedes-benz-cars-ultra-hd-laptop-wallpaper.jpg" alt="Your Name" />
+        <p>Hi! I’m M.Varun, a web developer with a passion for creating beautiful and functional websites. With expertise in HTML, CSS, and JavaScript, I’ve developed several projects that showcase my skills in front-end development.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>Node.js</li>
+            <li>React</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.tZdYp3--MOHrWnZ_GRg6IQHaE8&pid=Api&P=0&h=180" alt="Project One">
+                    <p>Project One: My first project through Code Soft</p>
+                </div>
+                <div class="slide">
+                    <img src="https://www.wallpapersshare.com/img/big/red-mercedes-benz-cars-ultra-hd-laptop-wallpaper.jpg" alt="Project Two">
+                    <p>Project Two: Innovative portfolio site</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>Download my resume <a href="https://example.com/resume.pdf" download>here</a>.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:madalavarun124@gmail.com">madalavarun1234@gmail.com</a></p>
+        <p>Phone: +91 8978507858</p>
+    </section>
+
+    <footer>
+        <p>© 2023 Madala Varun. All rights reserved.</p>
+    </footer>
+</body>
+</html>
