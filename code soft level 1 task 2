@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Landing Page</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #794444;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .header, .footer {
+        background-color: #e1dede;
+        color: #161515;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .section {
+        background-color: #c2bdbd;
+        border: 1px solid #1d1414;
+        padding: 20px;
+        box-sizing: border-box;
+        flex: 1;
+        margin: 10px;
+        min-width: 280px;
+    }
+    .header p, .footer p {
+        margin: 0;
+    }
+    .footer {
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Welcome to My Landing Page</h1>
+            <p>Your journey starts here</p>
+        </header>
+        <main class="main">
+            <div class="section">
+                <h2>About Us</h2>
+                <p>A landing page is an ideal web development project for beginners. It requires basic
+                    knowledge of HTML and CSS. Through this project, you'll learn to create columns, divide
+                    sections, arrange items, and add headers and footers. The most important aspect is
+                    unleashing your creativity to design an impressive page. Pay attention to alignments,
+                    padding, color palette, boxes, and other elements. Be mindful of CSS to avoid overlapping
+                    
+                    elements. In short, a landing page project allows you to apply HTML and CSS skills,
+                    encouraging your creativity while ensuring a visually appealing and user-friendly design.</p>
+            </div>
+            <div class="section">
+                <h2>Services</h2>
+                <p>A landing page is a standalone page with a single CTA that encourages users to take a specific action.
+                     Such as purchasing a promoted product, filling out a form, or downloading a resource.
+                     And landing pages don’t have much (or any) navigation to other parts of your site.</p>
+            </div>
+            <div class="section">
+                <h2>Contact</h2>
+                <p> teamleader@codsoft.in</p>
+            </div>
+        </main>
+        <footer class="footer">
+            <p>© 2025  All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
